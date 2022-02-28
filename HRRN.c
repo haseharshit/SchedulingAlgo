@@ -4,7 +4,7 @@
 struct process {
 	char name;
 	int at, bt, ct, wt, tt;
-	int ct;
+	int ctt;
 	float ntt;
 } p[10];
 
@@ -61,7 +61,7 @@ void main()
 		int loc;
 		for (i = 0; i < n; i++) {
 
-			if (p[i].at <= t && p[i].ct != 1) {
+			if (p[i].at <= t && p[i].ctt != 1) {
 
 				temp = (p[i].bt + (t - p[i].at)) / p[i].bt;
 
@@ -84,7 +84,7 @@ void main()
 
 		p[loc].ntt = ((float)p[loc].tt / p[loc].bt);
 
-		p[loc].ct = 1;
+		p[loc].ctt = 1;
 
 		avgwt += p[loc].wt;
 		printf("\n%c\t\t%d\t\t", p[loc].name, p[loc].at);

@@ -1,5 +1,4 @@
  #include<stdio.h>
- #include<conio.h>
  struct Process {
 	int pid; // Process ID
 	int at; // Arrival Time
